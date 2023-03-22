@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    /* Primary */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    /* Neutral */
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background-color: var(--Dark-Blue);
+}
+
+.container {
+    position: relative;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 12px;
+    width: 520px;
+    padding: 30px;
+}
+
+.container header {
+    text-align: center;
+    color: var(--Neon-Green);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.container .content p {
+    text-align: center;
+    color: var(--Light-Cyan);
+    margin-block: 20px 30px;
+}
+
+.container footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.container footer button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Neon-Green);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    bottom: -30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container footer button:hover {
+    box-shadow: 0 0 17px var(--Neon-Green);
+}
